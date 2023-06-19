@@ -2,6 +2,7 @@ package org.abulhaasuub.company.department;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +16,7 @@ public class DepartmentController {
 	
 	@GetMapping("/")
 	public String mainPage() {
-		return "Hello, World!";
+		return "<h2> Welcome to the application! </h2>";
 	}
 	
 	@GetMapping("/departments")
